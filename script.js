@@ -28,6 +28,7 @@ function generateGrid(squares) {
 }
 
 promptBtn.addEventListener("click", () => {
+  container.innerHTML = "";
   generateGrid(getUserInput());
 });
 
