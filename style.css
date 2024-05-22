@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.grid-item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#container {
+  outline: 1px solid red;
+  margin: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item:hover {
+  background-color: royalblue;
+}
