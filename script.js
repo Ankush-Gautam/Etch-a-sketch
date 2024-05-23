@@ -1,7 +1,9 @@
 const container = document.querySelector("#container");
 const promptBtn = document.querySelector("#prompt-btn");
-let input = 16; //by default 16
+const containerWidth = 600;
+const containerHeight = 600;
 
+let input = 16; //by default 16
 //validating user input
 function getUserInput() {
   do {
@@ -19,7 +21,10 @@ function generateGrid(squares) {
 
     for (let j = 0; j < squares; j++) {
       const grid = document.createElement("div");
+
       grid.classList.add("grid-item");
+      grid.style.width = containerWidth / squares + "px";
+      grid.style.height = containerHeight / squares + "px";
       row.appendChild(grid);
     }
 
